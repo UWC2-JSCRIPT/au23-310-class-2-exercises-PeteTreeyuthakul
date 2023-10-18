@@ -86,8 +86,8 @@ const months = [
   'December'
 ];
 
-const strdateTime = `${dueDate.getFullYear()}-${dueDate.getMonth()+1}-${dueDate.getDate()}`
-console.log(strdateTime)
+const strdateTime1 = `${dueDate.getFullYear()}-${dueDate.getMonth()+1}-${dueDate.getDate()}`
+const strdateTime = `<time datetime= "${strdateTime1}">${months[dueDate.getMonth()]} ${dueDate.getDate()}, ${dueDate.getFullYear()}</time>`
 
 // 10. log this value using console.log
-console.log(`<time datetime= "${strdateTime}">${months[dueDate.getMonth()]} ${dueDate.getDate()}, ${dueDate.getFullYear()}</time>`)
+console.log(strdateTime)
